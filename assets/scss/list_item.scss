@@ -1,0 +1,13 @@
+@import "../../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+.md-list-item-text{
+  h3{
+    display: inline-block;
+    @include transition(all .3s);
+
+    &:hover{
+      color: #00d8ff;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.md-list-item-text h3 {
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.md-list-item-text h3:hover {
+  color: #00d8ff;
+  cursor: pointer;
+}

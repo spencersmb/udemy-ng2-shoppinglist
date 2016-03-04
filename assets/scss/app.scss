@@ -1,0 +1,47 @@
+@import "../../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "section";
+@import "directive";
+
+body {
+  padding: 32px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  background-color: #ccc;
+}
+h1{
+  color: #4c4c4c;
+}
+
+.top{
+  margin-top: 50px;
+}
+
+.app-content{
+
+  .examples{
+    width:940px;
+    padding:0;
+    background-color:transparent;
+  }
+
+  .section1{
+    padding:0 15px;
+  }
+  .md-toolbar-tools{
+    h3{
+      margin:15px 0;
+    }
+    p{
+      font-size: 14px;
+      margin:0 0 20px 0;
+    }
+    &.no-height{
+      height:auto;
+      max-height: none;
+    }
+  }
+}
+
+.editForm{
+  padding: 0 15px;
+}

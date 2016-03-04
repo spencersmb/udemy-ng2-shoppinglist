@@ -1,0 +1,43 @@
+<section class="examples">
+    <div layout="column" class="md-inline-form">
+        <md-content layout-padding>
+            <div class="section1">
+                <shopping-add-item></shopping-add-item>
+            </div>
+        </md-content>
+    </div>
+</section>
+<section class="examples top">
+    <div layout="column" class="md-inline-form">
+        <md-toolbar class="demo-toolbar md-primary">
+            <div class="md-toolbar-tools">
+                <h3>My Shopping List</h3>
+                <span flex=""></span>
+            </div>
+        </md-toolbar>
+        <md-content layout-padding>
+            <md-subheader class="md-no-sticky">Output</md-subheader>
+
+            <md-list-item
+                class="md-2-line"
+                *ngFor="#i = index; #item of listItems"
+                (click)="onSelect(item, i)">
+
+                <div class="md-list-item-text">
+                    <h3>{{item.name}}, ({{item.amount}})</h3>
+                </div>
+
+            </md-list-item>
+
+            <div *ngIf="isEditing != false">
+
+                <md-divider></md-divider>
+
+                <shopping-list-edit [item]="selectedItem" (isEditing)="onItemEdit($event)"></shopping-list-edit>
+
+            </div>
+
+
+        </md-content>
+    </div>
+</section>
