@@ -1,5 +1,9 @@
 import {Component} from "angular2/core";
-
+import {MATERIAL_DIRECTIVES} from 'ng2-material/all';
+import {ListItems} from "./listModel";
+import {ShoppingListService} from "./services/shopping-list.service";
+import {ShoppingAddItem} from "./shopping.addItem.component";
+import {ShoppingListEditComponent} from "./shopping.edit.component";
 
 @Component({
     selector: 'shopping-list',
